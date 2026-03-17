@@ -23,3 +23,94 @@ button {
   border: 0;
   cursor: pointer;
 }
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #E5EAFF;
+}
+
+.container {
+  max-width: 588px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__content {
+  padding-top: 20px;
+}
+
+.logo__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header__content--title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.35;
+  text-align: center;
+  margin: 20px 16px;
+}
+
+.header__content--text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+/* -------------------------- */
+
+.slots {
+  padding: 40px 0 55px;
+}
+
+.slots__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slots__item {
+  display: flex;
+  justify-content: start;
+  gap: 35px;
+  width: 520px;
+}
+
+.slots__item:last-child {
+  padding-bottom: 50px;
+}
+
+.slots__item--inner {
+  padding-bottom: 18px;
+}
+
+.slots__item--title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.slots__item--text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: start;
+}
+
+.slots__button{
+  width: 165px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  border: 6px solid #DA2E71;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
