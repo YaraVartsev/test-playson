@@ -10,7 +10,7 @@ html {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 ul {
@@ -102,6 +102,10 @@ body {
   text-align: start;
 }
 
+.slots__link{
+  text-decoration: none;
+}
+
 .slots__button {
   width: 165px;
   height: 60px;
@@ -124,7 +128,7 @@ body {
 
 .jackpots__title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 8px;
@@ -132,7 +136,7 @@ body {
 
 .jackpots__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.25;
   text-align: center;
   margin-bottom: 20px;
@@ -188,6 +192,10 @@ body {
   background-image: url('../images/projects-item-svg.svg');
 }
 
+.jackpots__link{
+  text-decoration: none;
+}
+
 .jackpots__button {
   background-color: #DA2E71;
   color: #FFFFFF;
@@ -202,4 +210,218 @@ body {
   margin: 0 auto;
 }
 
-/* ------------------------------------------------------------ */
+/* ------------------------------- */
+
+.footer {
+  padding: 20px 0;
+  background: linear-gradient(rgba(73, 76, 106, 1), rgba(37, 38, 56, 1));
+}
+
+.footer__connect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.footer__connect--app {
+  display: flex;
+  width: 508px;
+  height: 124px;
+  background-color: #373950;
+  border: 1px solid rgba(255, 59, 59, 1);
+  /* border-image-source: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+  border-image-slice: 0.5; */
+  border-radius: 16px;
+}
+
+.app-inner {
+  max-width: 298px;
+  height: 123px;
+  background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+  border-radius: 16px 0 0 16px;
+  padding: 16px 0;
+}
+
+.app-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  margin: 0 30px 4px 60px;
+  position: relative;
+}
+
+.app-title::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -45px;;
+  width: 40px;
+  height: 40px;
+}
+
+.app-title::before{
+  background-image: url(../images/connect-app.svg);
+}
+
+.app-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.footer__connect--button {
+  background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+  color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  width: 178px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  padding: 8px 22px 8px 54px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.footer__connect--button::before{
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__connect--button::before{
+  background-image: url(../images/button-app.svg);
+}
+
+.footer__connect--telegram {
+  display: flex;
+  width: 508px;
+  height: 72px;
+  color: rgba(255, 255, 255, 1);
+  background-color: #373950;
+  border: 1px solid rgba(62, 123, 250, 1);
+  border-radius: 16px;
+}
+
+.telegram-text {
+  max-width: 298px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.1;
+  background: linear-gradient(rgba(62, 123, 250, 1), rgba(102, 0, 204, 1));
+  border-radius: 16px 0 0 16px;
+  padding: 20px 16px 20px 64px;
+  position: relative;
+}
+
+.telegram-text::before{
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 40px;
+  height: 40px;
+}
+
+.telegram-text::before{
+  background-image: url(../images/connect-telegram.svg);
+}
+
+.telegram-button {
+  background: linear-gradient(rgba(62, 123, 250, 1), rgba(102, 0, 204, 1));
+  color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  width: 178px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  padding: 8px 18px 8px 50px;
+  margin: 16px;
+  position: relative;
+}
+
+.telegram-button::before{
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 25px;;
+  width: 24px;
+  height: 24px;
+}
+
+.telegram-button::before{
+  background-image: url(../images/button-telegram.svg);
+}
+
+.footer__call {
+  display: flex;
+  justify-content: space-between;
+  max-width: 508px;
+  border-top: 2px dashed rgba(255, 255, 255, 0.6);
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.6);
+  padding: 20px 0;
+}
+
+.footer__call--inner {
+  max-width: 217px;
+}
+
+.call-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 1);
+}
+
+.call-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.call-button {
+  background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+  color: rgba(255, 255, 255, 1);
+  width: 177px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.7;
+  border-radius: 8px;
+  padding: 8px 12px 8px 44px;
+  position: relative;
+}
+
+.call-button::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;;
+  width: 24px;
+  height: 24px;
+}
+
+.call-button::before{
+  background-image: url(../images/button-call.svg);
+}
+
+.footer__text {
+  max-width: 508px;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+  color: rgba(143, 144, 166, 1);
+  padding: 20px 0;
+}
+
+.footer__text--link{
+  color: rgba(218, 46, 113, 1);
+}
