@@ -10,7 +10,7 @@ html {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 ul {
@@ -22,4 +22,666 @@ button {
   padding: 0;
   border: 0;
   cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #E5EAFF;
+}
+
+.container {
+  max-width: 588px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__content {
+  padding-top: 20px;
+}
+
+.logo__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header__content--title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.35;
+  text-align: center;
+  margin: 20px 16px;
+}
+
+.header__content--text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+/* -------------------------- */
+
+.slots {
+  padding: 40px 0 55px;
+}
+
+.slots__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slots__item {
+  display: flex;
+  justify-content: start;
+  gap: 35px;
+  width: 520px;
+}
+
+.slots__item:last-child {
+  padding-bottom: 50px;
+}
+
+.slots__item--inner {
+  padding-bottom: 18px;
+}
+
+.slots__item--title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.slots__item--text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: start;
+}
+
+.slots__link {
+  text-decoration: none;
+}
+
+.slots__button {
+  width: 165px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  border: 6px solid #DA2E71;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----------------------------- */
+
+.jackpots {
+  background-color: #373950;
+  padding: 48px 0 20px;
+}
+
+.jackpots__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.jackpots__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.jackpots__items {
+  display: flex;
+  gap: 20px;
+}
+
+.jackpots__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.jackpots__item--img {
+  border-radius: 8px;
+}
+
+.jackpots__item--sum {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.86);
+  color: #06C270;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  width: 168px;
+  height: 24px;
+  bottom: 25px;
+  padding: 4px 47px;
+  border: 8px;
+}
+
+.jackpots__item--text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  position: relative;
+  margin-top: 8px;
+  margin-left: 25px;
+}
+
+.jackpots__item--text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 16px;
+  height: 16px;
+}
+
+.jackpots__item--text::before {
+  background-image: url('../images/projects-item-svg.svg');
+}
+
+.jackpots__link {
+  text-decoration: none;
+}
+
+.jackpots__button {
+  background-color: #DA2E71;
+  color: #FFFFFF;
+  width: 175px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------------------------- */
+
+.footer {
+  padding: 20px 0;
+  background: linear-gradient(rgba(73, 76, 106, 1), rgba(37, 38, 56, 1));
+}
+
+.footer__connect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.footer__connect--app {
+  display: flex;
+  max-width: 508px;
+  height: 124px;
+  background-color: #373950;
+  border: 1px solid rgba(255, 59, 59, 1);
+  /* border-image-source: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+  border-image-slice: 0.5; */
+  border-radius: 16px;
+}
+
+.app-inner {
+  max-width: 298px;
+  height: 123px;
+  background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+  border-radius: 16px 0 0 16px;
+  padding: 16px 0;
+}
+
+.app-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  margin: 0 30px 4px 60px;
+  position: relative;
+}
+
+.app-title::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -45px;
+  width: 40px;
+  height: 40px;
+}
+
+.app-title::before {
+  background-image: url(../images/connect-app.svg);
+}
+
+.app-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.footer__connect--button {
+  background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+  color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  max-width: 178px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  padding: 8px 22px 8px 54px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.footer__connect--button::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__connect--button::before {
+  background-image: url(../images/button-app.svg);
+}
+
+.footer__connect--telegram {
+  display: flex;
+  max-width: 508px;
+  height: 72px;
+  color: rgba(255, 255, 255, 1);
+  background-color: #373950;
+  border: 1px solid rgba(62, 123, 250, 1);
+  border-radius: 16px;
+}
+
+.telegram-text {
+  max-width: 298px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.1;
+  background: linear-gradient(rgba(62, 123, 250, 1), rgba(102, 0, 204, 1));
+  border-radius: 16px 0 0 16px;
+  padding: 20px 16px 20px 64px;
+  position: relative;
+}
+
+.telegram-text::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 40px;
+  height: 40px;
+}
+
+.telegram-text::before {
+  background-image: url(../images/connect-telegram.svg);
+}
+
+.telegram-button {
+  background: linear-gradient(rgba(62, 123, 250, 1), rgba(102, 0, 204, 1));
+  color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  width: 178px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  padding: 8px 18px 8px 50px;
+  margin: 16px;
+  position: relative;
+}
+
+.telegram-button::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  width: 24px;
+  height: 24px;
+}
+
+.telegram-button::before {
+  background-image: url(../images/button-telegram.svg);
+}
+
+.footer__call {
+  display: flex;
+  justify-content: space-between;
+  max-width: 508px;
+  border-top: 2px dashed rgba(255, 255, 255, 0.6);
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.6);
+  padding: 20px 0;
+}
+
+.footer__call--inner {
+  max-width: 217px;
+}
+
+.call-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 1);
+}
+
+.call-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.call-button {
+  background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+  color: rgba(255, 255, 255, 1);
+  width: 177px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.7;
+  border-radius: 8px;
+  padding: 8px 12px 8px 44px;
+  position: relative;
+}
+
+.call-button::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  ;
+  width: 24px;
+  height: 24px;
+}
+
+.call-button::before {
+  background-image: url(../images/button-call.svg);
+}
+
+.footer__text {
+  max-width: 508px;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+  color: rgba(143, 144, 166, 1);
+  padding: 20px 0;
+}
+
+.footer__text--link {
+  color: rgba(218, 46, 113, 1);
+}
+
+.footer__gray {
+  max-width: 600px;
+  height: 234px;
+}
+
+/* ''''''''''''''''''''''''''''''''''''''''' */
+
+
+
+
+@media (max-width: 580px) {
+  .slots__item {
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .slots__item--img {
+    margin-bottom: 8px;
+  }
+
+  .slots__item--title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .slots__item--text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .jackpots__items {
+    display: block;
+  }
+
+  .jackpots__item {
+    max-width: 168px;
+    margin: 0 auto 20px;
+  }
+
+  .footer__connect--app {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    height: 188px;
+    /* background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+    border: 1px solid rgba(255, 59, 59, 1);
+    border-radius: 16px; */
+    margin: 0 auto;
+  }
+
+  .app-inner {
+    width: 100%;
+    display: block;
+    max-width: 298px;
+    height: 123px;
+    background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+    border-radius: 16px 16px 0 0px;
+    padding: 16px 0;
+  }
+
+  .app-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .app-title::before {
+    top: 0;
+    left: -40px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .app-title::before {
+    background-image: url(../images/connect-app--m.svg);
+  }
+
+  .app-text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .footer__connect--button {
+    margin: 15px auto;
+  }
+
+  .footer__connect--telegram {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    height: 136px;
+    margin: 0 auto;
+  }
+
+  .telegram-text {
+    width: 100%;
+    display: block;
+    max-width: 298px;
+    height: 64px;
+    background: linear-gradient(rgba(62, 123, 250, 1), rgba(102, 0, 204, 1));
+    text-align: start;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 16px 16px 0 0px;
+    padding: 16px 12px 16px 48px;
+  }
+
+  .telegram-text::before {
+    top: 17px;
+    left: 15px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .telegram-text::before {
+    background-image: url(../images/connect-telegram--m.svg);
+  }
+
+  .telegram-button {
+    margin: 16px 51px;
+  }
+
+  .footer__call{
+    display: block;
+  }
+
+  .footer__call--inner{
+    margin: 0 auto 8px;
+  }
+
+  .call-title{
+    text-align: center;
+  }
+
+  .call-button{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ----------------------------------------- */
+
+@media (max-width: 480px) {
+  .header__content--title {
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 10px 16px;
+  }
+
+  .slots__item {
+    max-width: 250px;
+    width: 100%;
+    height: 358px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .slots__item--img {
+    margin-bottom: 8px;
+  }
+
+  .slots__item--title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .slots__item--text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+/* ------------------------------------ */
+
+@media (max-width: 380px) {
+  .header__content--title {
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 10px 10px;
+  }
+
+  .slots__item {
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .slots__item--img {
+    margin-bottom: 8px;
+  }
+
+  .slots__item--title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .slots__item--text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+/* ------------------------------------ */
+
+@media (max-width: 320px) {
+  .header__content--title {
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 16px 16px;
+  }
+
+  .slots__item {
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .slots__item--img {
+    margin-bottom: 8px;
+  }
+
+  .slots__item--title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .slots__item--text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .jackpots__title {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .jackpots__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .footer__text{
+    max-width: 280px;
+    font-size: 11px;
+  }
 }
