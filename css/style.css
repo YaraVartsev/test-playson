@@ -102,7 +102,7 @@ body {
   text-align: start;
 }
 
-.slots__link{
+.slots__link {
   text-decoration: none;
 }
 
@@ -192,7 +192,7 @@ body {
   background-image: url('../images/projects-item-svg.svg');
 }
 
-.jackpots__link{
+.jackpots__link {
   text-decoration: none;
 }
 
@@ -226,7 +226,7 @@ body {
 
 .footer__connect--app {
   display: flex;
-  width: 508px;
+  max-width: 508px;
   height: 124px;
   background-color: #373950;
   border: 1px solid rgba(255, 59, 59, 1);
@@ -255,12 +255,12 @@ body {
   content: "";
   position: absolute;
   top: -6px;
-  left: -45px;;
+  left: -45px;
   width: 40px;
   height: 40px;
 }
 
-.app-title::before{
+.app-title::before {
   background-image: url(../images/connect-app.svg);
 }
 
@@ -276,7 +276,7 @@ body {
   background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
   color: rgba(255, 255, 255, 1);
   border-radius: 8px;
-  width: 178px;
+  max-width: 178px;
   height: 40px;
   font-size: 16px;
   line-height: 1.5;
@@ -286,7 +286,7 @@ body {
   position: relative;
 }
 
-.footer__connect--button::before{
+.footer__connect--button::before {
   content: "";
   position: absolute;
   top: 9px;
@@ -295,13 +295,13 @@ body {
   height: 24px;
 }
 
-.footer__connect--button::before{
+.footer__connect--button::before {
   background-image: url(../images/button-app.svg);
 }
 
 .footer__connect--telegram {
   display: flex;
-  width: 508px;
+  max-width: 508px;
   height: 72px;
   color: rgba(255, 255, 255, 1);
   background-color: #373950;
@@ -320,7 +320,7 @@ body {
   position: relative;
 }
 
-.telegram-text::before{
+.telegram-text::before {
   content: "";
   position: absolute;
   top: 16px;
@@ -329,7 +329,7 @@ body {
   height: 40px;
 }
 
-.telegram-text::before{
+.telegram-text::before {
   background-image: url(../images/connect-telegram.svg);
 }
 
@@ -347,16 +347,16 @@ body {
   position: relative;
 }
 
-.telegram-button::before{
+.telegram-button::before {
   content: "";
   position: absolute;
   top: 9px;
-  left: 25px;;
+  left: 25px;
   width: 24px;
   height: 24px;
 }
 
-.telegram-button::before{
+.telegram-button::before {
   background-image: url(../images/button-telegram.svg);
 }
 
@@ -400,16 +400,17 @@ body {
   position: relative;
 }
 
-.call-button::before{
+.call-button::before {
   content: "";
   position: absolute;
   top: 10px;
-  left: 15px;;
+  left: 15px;
+  ;
   width: 24px;
   height: 24px;
 }
 
-.call-button::before{
+.call-button::before {
   background-image: url(../images/button-call.svg);
 }
 
@@ -422,6 +423,265 @@ body {
   padding: 20px 0;
 }
 
-.footer__text--link{
+.footer__text--link {
   color: rgba(218, 46, 113, 1);
+}
+
+.footer__gray {
+  max-width: 600px;
+  height: 234px;
+}
+
+/* ''''''''''''''''''''''''''''''''''''''''' */
+
+
+
+
+@media (max-width: 580px) {
+  .slots__item {
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .slots__item--img {
+    margin-bottom: 8px;
+  }
+
+  .slots__item--title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .slots__item--text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .jackpots__items {
+    display: block;
+  }
+
+  .jackpots__item {
+    max-width: 168px;
+    margin: 0 auto 20px;
+  }
+
+  .footer__connect--app {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    height: 188px;
+    /* background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+    border: 1px solid rgba(255, 59, 59, 1);
+    border-radius: 16px; */
+    margin: 0 auto;
+  }
+
+  .app-inner {
+    width: 100%;
+    display: block;
+    max-width: 298px;
+    height: 123px;
+    background: linear-gradient(rgba(255, 59, 59, 1), rgba(102, 0, 204, 1));
+    border-radius: 16px 16px 0 0px;
+    padding: 16px 0;
+  }
+
+  .app-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .app-title::before {
+    top: 0;
+    left: -40px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .app-title::before {
+    background-image: url(../images/connect-app--m.svg);
+  }
+
+  .app-text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .footer__connect--button {
+    margin: 15px auto;
+  }
+
+  .footer__connect--telegram {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    height: 136px;
+    margin: 0 auto;
+  }
+
+  .telegram-text {
+    width: 100%;
+    display: block;
+    max-width: 298px;
+    height: 64px;
+    background: linear-gradient(rgba(62, 123, 250, 1), rgba(102, 0, 204, 1));
+    text-align: start;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 16px 16px 0 0px;
+    padding: 16px 12px 16px 48px;
+  }
+
+  .telegram-text::before {
+    top: 17px;
+    left: 15px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .telegram-text::before {
+    background-image: url(../images/connect-telegram--m.svg);
+  }
+
+  .telegram-button {
+    margin: 16px 51px;
+  }
+
+  .footer__call{
+    display: block;
+  }
+
+  .footer__call--inner{
+    margin: 0 auto 8px;
+  }
+
+  .call-title{
+    text-align: center;
+  }
+
+  .call-button{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ----------------------------------------- */
+
+@media (max-width: 480px) {
+  .header__content--title {
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 10px 16px;
+  }
+
+  .slots__item {
+    max-width: 250px;
+    width: 100%;
+    height: 358px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .slots__item--img {
+    margin-bottom: 8px;
+  }
+
+  .slots__item--title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .slots__item--text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+/* ------------------------------------ */
+
+@media (max-width: 380px) {
+  .header__content--title {
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 10px 10px;
+  }
+
+  .slots__item {
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .slots__item--img {
+    margin-bottom: 8px;
+  }
+
+  .slots__item--title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .slots__item--text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+/* ------------------------------------ */
+
+@media (max-width: 320px) {
+  .header__content--title {
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 16px 16px;
+  }
+
+  .slots__item {
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .slots__item--img {
+    margin-bottom: 8px;
+  }
+
+  .slots__item--title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .slots__item--text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .jackpots__title {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .jackpots__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .footer__text{
+    max-width: 280px;
+    font-size: 11px;
+  }
 }
